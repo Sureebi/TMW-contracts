@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vehicle Sale Contract</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+   <div class="container">
+      <div class="blur1"></div>
+      <div class="rec1"></div>
+      <div class="blur2"></div>
+      <img id="keyimg" src="imgs/key.png">
+      <span id="svname">TMW</span>
+      <span id="header">ДОГОВОР ЗА ПРОДАЖБА</span>
+      <span id="subheader">Попълнете детайлите за продажбата на автомобила</span>
+      
+      <div class="framereceiver">
+         <img id="icon" src="imgs/user.png">
+         <span id="label">Купувач</span>
+         <span id="text"></span>
+      </div>
+      
+      <div class="frameplate">
+         <img id="icon" src="imgs/car.png">
+         <span id="label">Регистрационен номер</span>
+         <span id="text">ABC 1234</span>
+      </div>
+      
+      <div class="frameprice">
+         <span id="currency">$</span>
+         <span id="label">Цена на продажбата</span>
+         <input type="number" id="price-input" placeholder="0" min="0" max="999999999">
+      </div>
+      
+      <img id="bigcar" src="imgs/bigcar.png">
+      
+      <div class="button-group">
+         <div id="cancel-button">ОТКАЗ</div>
+         <div id="transfer-button">ПРОДАЙ</div>
+      </div>
+   </div>
+
+   <div class="container2">
+      <div class="blur1"></div>
+      <div class="rec1"></div>
+      <div class="blur2"></div>
+      <img id="keyimg" src="imgs/key.png">
+      <span id="svname">TMW</span>
+      <span id="header">ПОТВЪРЖДЕНИЕ НА ПРОДАЖБАТА</span>
+      <span id="subheader">Моля, прегледайте детайлите преди финализиране</span>
+      
+      <div class="framereceiver">
+         <img id="icon" src="imgs/user.png">
+         <span id="label">Подпис на продавача</span>
+         <span id="sign"></span>
+         <div id="line"></div>
+      </div>
+      
+      <div class="frameplate">
+         <img id="icon" src="imgs/car.png">
+         <span id="label">Регистрационен номер</span>
+         <span id="text">ABC 1234</span>
+      </div>
+      
+      <div class="frameprice-confirm">
+         <span id="currency">$</span>
+         <span id="label">Обща сума</span>
+         <span id="price-display">0</span>
+      </div>
+      
+      <img id="bigcar" src="imgs/bigcar.png">
+      
+      <div class="button-group">
+         <div id="back-button">НАЗАД</div>
+         <div id="confirm-button">ПОТВЪРДИ</div>
+      </div>
+   </div>
+
+   <script src="app.js" type="text/javascript"></script>
+   <audio id="sound" src="button.wav"> </audio>
+</body>
+
+</html>
