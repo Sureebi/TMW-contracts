@@ -4,7 +4,7 @@ game 'gta5'
 
 description 'https://discord.gg/MJckFAyE3m'
 
-author 'KzO Exclusives'
+author 'Sureebi'
 
 client_scripts {'client.lua'}
 
